@@ -4,7 +4,9 @@
   "scripts": {},
   "env": {
     "DEVISE_JWT_SECRET_KEY": {
-      "generator": "secret"
+      "generator": "secret",
+      "value": "replaceme",
+      "required": true
     }
   },
   "formation": {
