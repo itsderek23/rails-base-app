@@ -18,5 +18,7 @@ test:
   database: <%= ENV.fetch("POSTGRES_DB") { "baseapp" } %>_test
 
 production:
-  <<: *default
+  adapter: "postgresql"
+  encoding: "unicode"
   database: <%= ENV.fetch("POSTGRES_DB") { "baseapp" } %>_production
+  url: <%= ENV["DATABASE_URL"] %>
