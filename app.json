@@ -1,0 +1,20 @@
+{
+  "name": "rails-base-app",
+  "addons": ["heroku-postgresql", "heroku-redis"],
+  "scripts": {},
+  "env": {
+    "DEVISE_JWT_SECRET_KEY": {
+      "generator": "secret"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
